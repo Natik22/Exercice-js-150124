@@ -1,0 +1,60 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+
+}
+
+h1 {
+    font-style: normal;
+    color: darkgreen;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.slider img {
+    max-width: 100%;
+    display: none;
+}
+
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn {
+    width: 100%;
+    margin-top: 5%;
+    height: auto;  
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 150%;
+    margin: 0 75px;
+    cursor: pointer;
+}
+
